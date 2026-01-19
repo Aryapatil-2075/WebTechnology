@@ -1,0 +1,42 @@
+Q.What is JavaScript and NodeJS
+Q.Difference between let,const,var
+Q.Difference between == and ===
+
+
+We can use NodeJS to run javascript code outside the browser.
+
+node --version
+node filename.js
+
+Primitive Datatypes---
+number
+Big INT
+string
+bool
+null
+undefine
+symbol
+
+Non-Primitive---
+object
+
+Variable Declaration---
+const--value doesn't change
+let--mutable
+var--reassign and Redeclare
+Scope of Variable
+
+=== Condition and Datatype also checked
+
+Summary----
+Syllabus
+Roadmap
+JS-Datatypes-Variables
+
+coversion operation on Variable---
+typecasting
+
+**operations
+let var=
+
+
