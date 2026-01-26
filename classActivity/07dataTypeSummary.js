@@ -58,3 +58,31 @@ const variable_name = function function_name() {
 //Array function :
 const name = () => console.log("arya");
 const adds = (a, b) => a + b; // Arrow Function Definition
+
+//Memory 2 types stack and heap
+//stack used for primitive
+//heap used for non-primitive
+
+let myNewYoutudeChannel = "ABP";
+let newYoutudeChannel = myNewYoutudeChannel;
+
+console.log(newYoutudeChannel);
+
+newYoutudeChannel = "SBP";
+console.log(newYoutudeChannel);
+
+//Primitive data stored in stack will we assgn 1 var to another
+
+let user1 = {
+  fname: "arya",
+  age: 21,
+  id: 311,
+};
+let user2 = user1;
+user2.id = 20;
+console.log(user1.id); //20
+console.log(user2.id); //20
+
+// non-primitive datatype object is stored heap memory when we assign one object to another variable reference is copied not value if change one both value changes
+
+console.log(balance.toString());
