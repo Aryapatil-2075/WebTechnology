@@ -22,7 +22,7 @@ console.log(x, y);
 
 //activity NO 1
 //Display student name, Student ID,email;
-
+console.log("Activity 1");
 let student_name = "Arya Patil";
 let student_id = 311;
 let email = "aryapatil2075@gmail.com";
@@ -35,6 +35,7 @@ document.writeln("Student Email :" + email + "<br>");
 
 //activity NO 2
 //check no even or odd
+console.log("Activity 2");
 num = 2;
 if (num % 2 == 0) {
   console.log("EVEN NUMBER", num);
@@ -46,6 +47,7 @@ if (num % 2 == 0) {
 
 //activity NO 3
 //check student pass or fail
+console.log("Activity 3");
 let marks = 45;
 if (marks >= 40) {
   console.log("PASS", marks);
@@ -57,12 +59,14 @@ if (marks >= 40) {
 
 //activity NO 4
 //print display no 1 to 10;
+console.log("Activity 4");
 for (let i = 1; i <= 10; i++) {
   console.log(i);
   document.writeln(i + "<br>");
 }
 
 //activity NO 5
+console.log("Activity 5");
 let p = 10;
 r = p;
 p = 2005;
