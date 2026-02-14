@@ -66,3 +66,23 @@ console.log(String(undefined)); //undefined
 
 console.log(Boolean(null)); //false
 console.log(Boolean(undefined)); //false
+
+let nullValue = null;
+let nullToNum = Number(nullValue); // null → 0
+console.log(nullToNum, typeof nullToNum); // 0 "number"
+
+let undefValue = undefined;
+let undefToNum = Number(undefValue); // undefined → NaN
+console.log(undefToNum, typeof undefToNum); // NaN "number"
+
+let arr = [10, 20, 30];
+let arrToStr = String(arr); // Array → "10,20,30"
+console.log(arrToStr, typeof arrToStr); // "10,20,30" "string"
+
+let obj = { name: "Asha" };
+let objToStr = String(obj); // Object → "[object Object]"
+console.log(objToStr, typeof objToStr); // "[object Object]" "string"
+
+let invalidStr = "abc";
+let invalidToNum = Number(invalidStr); // "abc" → NaN
+console.log(invalidToNum, typeof invalidToNum); // NaN "number"

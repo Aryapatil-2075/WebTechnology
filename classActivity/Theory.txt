@@ -41,4 +41,24 @@ typecasting
 **operations
 let var=
 
+//Dom is document object model
+
+Is programming interface for html  
+It is bridge between html and js when browser loads html page
+It converts html in object
+that object structure is called Dom
+javascript uses dom to change,read,add,del,html elements
+
+
+form validation used to validate user fields
+example length of password,display success msg , format of email
+
+dom manipulation means changing html using js like 
+change text color,
+clear input fields,
+show error msg and
+display success msg,
+change backgrd color .
+
+
 

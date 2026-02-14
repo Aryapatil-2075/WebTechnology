@@ -71,7 +71,7 @@ console.log(newYoutudeChannel);
 newYoutudeChannel = "SBP";
 console.log(newYoutudeChannel);
 
-//Primitive data stored in stack will we assgn 1 var to another
+//Primitive data stored in stack will we assign 1 var to another
 
 let user1 = {
   fname: "arya",

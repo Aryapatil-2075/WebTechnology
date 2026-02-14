@@ -17,4 +17,17 @@ console.log(Math.floor(4.6)); //4
 console.log(Math.min(1, 2, 3, 4)); //1
 console.log(Math.max(1, 2, 3, 4)); //4
 
-//ActivityMath.random
+//Activity---Math.random
+//Math.random() generates a random number between 0 and 1
+let r1 = Math.random();
+console.log("Random (0-1):", r1);
+
+//Math.floor()-it removes the decimal part
+let r2 = Math.floor(Math.random() * 10) + 1;
+console.log("Random (1-10):", r2);
+
+let num = Math.floor(Math.random() * 100) + 1;
+let type = num % 2 === 0 ? "Even" : "Odd";
+
+console.log("Number:", num);
+console.log("Result:", type);

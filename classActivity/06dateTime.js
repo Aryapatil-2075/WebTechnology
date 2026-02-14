@@ -17,6 +17,15 @@ console.log(
   }),
 );
 
+let mytime = Date.now();
+console.log(mytime);
+console.log(Date.now()); //convert milisec
+console.log(Date.now() / 1000); //convert sec
+console.log(Math.floor(Date.now() / 1000)); // lowest value
+
+//timestamp :
+//when we create pool in application then we use timestamp
+
 let myTimeStamp = Date.now();
 console.log(myTimeStamp);
 console.log(Date.now() / 1000);
