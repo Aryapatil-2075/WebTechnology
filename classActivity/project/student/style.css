@@ -1,0 +1,49 @@
+body{
+    font-family: Arial;
+    text-align:center;
+    background:#f4f6f9;
+}
+
+h1{
+    background:#2c3e50;
+    color:white;
+    padding:15px;
+}
+
+table{
+    margin:20px auto;
+    border-collapse:collapse;
+    background:white;
+}
+
+th, td{
+    border:1px solid #ccc;
+    padding:10px;
+}
+
+input{
+    width:60px;
+    padding:5px;
+}
+
+.weak{
+    background-color:#ffcccc;
+}
+
+#result{
+    margin-top:20px;
+    font-size:18px;
+    padding:10px;
+}
+
+.good{
+    color:green;
+}
+
+.average{
+    color:orange;
+}
+
+.poor{
+    color:red;
+}
