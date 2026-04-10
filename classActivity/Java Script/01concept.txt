@@ -1,0 +1,31 @@
+// File 1: Concepts File
+
+// 1. What is Web Technology?
+// Web Technology refers to the tools, languages, and techniques used
+// to create websites and web applications that run on the internet.
+// It includes frontend (what users see) and backend (server-side work).
+
+
+// 2. Real-time examples of Web Technology
+// • Google – used for searching information on the web
+// • YouTube – video streaming website
+// • Instagram – social media platform
+// • Amazon – online shopping website
+// • Online banking websites – used for money transactions
+
+
+// 3. What is JavaScript?
+// JavaScript is a programming language used to make web pages interactive.
+// It helps in adding features like button clicks, form validation,
+// animations, and dynamic content on websites.
+
+
+// 4. Which file extension is used for JavaScript?
+// The file extension used for JavaScript is .js
+// Example: app.js, script.js
+
+
+// 5. Why do we use Node.js?
+// Node.js is used to run JavaScript outside the browser.
+// It allows JavaScript to be used for backend development.
+// With Node.js, we can create servers, APIs, and handle databases.
