@@ -1,0 +1,204 @@
+react is a js library developed by meta to build a fast and interactive interfaces
+
+It is single page Application(SPA).
+
+Page does not reload, only content change
+ex -insta,facebook
+
+why do we use react?
+
+Problem with js : Fully page reload, complex dom manipulation, hard to manage large application.
+Solution : Updates only required parts, use reusable component.
+
+Virtual DOM : React creates copy of real DOM.
+
+When data changes, React updates Virtual DOM ,updates only the changed part in DOM
+use for High Performance
+
+How we create project in React
+npx create react-app name : old
+npm create vite@latest StudentApp :new
+
+Activities:
+1. what is different between angular and react ?
+
+Angular → a complete framework
+React → a JavaScript library (UI-focused)
+
+Angular → uses TypeScript (mandatory)
+React → uses JavaScript (with optional TypeScript)
+
+React :Only one-way binding,Even forms are controlled manually
+Angular :Supports both, Gives built-in support for forms and syncing
+
+Angular gives you almost everything ready-made.
+React gives you flexibility but you choose extra tools yourself
+Angular syntax:<h1>{{ title }}</h1>
+React syntax:<h1>{title}</h1>
+
+2. market hype?
+React → Higher hype & demand
+developed by Meta
+Used by many startups and big companies
+Huge ecosystem (Next.js, React Native, etc.)
+More job openings (especially for freshers)
+
+Angular → Stable but less hype
+Developed by Google
+Strong in enterprise-level applications
+Used in banking, government, large systems
+Fewer openings compared to React (but still valuable)
+
+3. why react is created
+Around 2011–2013, Facebook had:
+-Very complex UIs
+-Constant data updates (likes, comments, notifications)
+-Messy code where UI and data easily got out of sync
+Result: Bugs, slow updates, and difficult maintenance
+
+Why React Was Created
+i. To Fix UI Updating Problems
+
+Before React:
+Developers manually updated the DOM
+Easy to make mistakes
+
+React introduced: Automatic UI updates based on state
+
+ii. Virtual DOM (Game Changer)
+
+React created a Virtual DOM
+Instead of updating the real DOM directly:
+React updates a lightweight copy
+Then applies only the minimal changes
+
+iii. Component-Based Architecture
+React broke UI into small reusable pieces
+Example:
+Navbar
+Button
+Card
+
+
+Vite : fast build tool, npm install means install dependences and np run dev means start server.
+
+jsx means javacript + xml: it allows to us write html code inside javacript
+
+eg :const element =<h1> Hello react</h1>
+
+Rules of JSX:
+-Must be written single parent:
+return (
+  <div>
+    <h1>Hello</h1>
+    <p>Hi</p>
+  </div>
+);
+-Use {} to javacript
+const name = "Arya";
+return <h1>Hello {name}</h1>;
+
+component is heart of React, reusable building block of react application
+syntax: functional component in react:
+function Student() {
+  return <h1>This is functional component</h1>;
+}
+
+Use component : 
+function App() {
+  return (
+    <>
+      <Student />
+    </>
+  );
+}
+
+props:
+Data passing from parent component to child component
+
+function App()  //(root folder(parent))
+{
+    return <Student fname='Arya'/>
+}
+function Student(props) //child folder
+{
+    return <h2> name:{props.fname} </h2>
+}
+
+Activities:
+What is components and types?
+1. Functional Components (Most Used Today)
+Simple JavaScript functions
+Return JSX
+Use Hooks for state and logic
+function Student() {
+  return <h1>Hello Student</h1>;
+}
+Class Components (Older Method):
+Based on ES6 classes
+Use render() method
+Have lifecycle methods
+import React, { Component } from "react";
+
+class Student extends Component {
+  render() {
+    return <h1>Hello Student</h1>;
+  }
+}
+
+where we use components in react?two examples?
+ - A component in React is a reusable piece of UI (User Interface).
+
+    where we use components in react.
+    - We use components to:
+        - Build UI in small reusable parts
+        - Separate logic (modular code)
+        - Improve readability and maintainability
+
+    with two exmaples.
+    - Functional Components
+        Simple JavaScript functions
+        Use hooks (like useState, useEffect)
+
+    - Class Components
+        ES6 classes
+        Use lifecycle methods
+
+what is props why we use props and types of props with 2 examples
+- Props (Properties) are used to pass data from one component to another.
+      Usually from parent → child
+    
+    why we use props?
+    - To make components dynamic
+      To pass data (like name, age, etc.)
+      To reuse the same component with different values
+
+    types of props?
+    1. Simple Props (Normal Data)
+        String, number, boolean
+    2. Complex Props
+        Object, Array, Function
+    
+    with two exmaples.
+   1.function Student(props) {
+        return <h3>Name: {props.name}</h3>;
+        }
+
+    <Student name="Atharv" />
+
+   2.function Student(props) {
+    return(
+            <div>
+                <h3>Name: {props.name}</h3>
+                <p>Age: {props.age}</p>
+            </div>
+        );
+    }
+
+    <Student name="Atharv" age={21} />
+
+
+What is state: 
+State means data that can change value that changes over time 
+
+When state changes UI changes Automatically
