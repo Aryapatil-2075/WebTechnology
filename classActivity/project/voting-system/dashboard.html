@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <h3>Voting Dashboard</h3>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <h2>Cast Your Vote</h2>
+
+    <div class="cards">
+        <button onclick="vote('A')">Vote Party A</button>
+        <button onclick="vote('B')">Vote Party B</button>
+        <button onclick="vote('C')">Vote Party C</button>
+    </div>
+
+    <br>
+
+    <button onclick="openModal()">View Results</button>
+
+    <br><br>
+
+    <canvas id="chart" width="300"></canvas>
+
+    <h3 id="winner"></h3>
+
+
+    <div id="resultModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">×</span>
+
+            <h3>Results</h3>
+            <p id="resultText"></p>
+            <h4 id="winnerText"></h4>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
