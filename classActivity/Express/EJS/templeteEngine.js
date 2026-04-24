@@ -1,0 +1,49 @@
+/*
+
+Template engine allow developer to create and generate the dynamic html page using data from the server
+Instead of static html page are created dynamic
+
+Popular engine
+EJS->Emebbed javascript
+PUG->
+HandleBars
+
+they help in dynamic contain,code reuseablity,separate logic from html
+
+
+EJS ->
+npm install EJS
+
+activity
+- what is static files
+- what is Express router ?
+- Complete Express Flow ?
+
+T.E. allows developer to generate dynamic web pages using data from the server. insted of static web pages we make dynamic web pages.
+ejs
+pug
+handle bars
+
+why ?
+they help in dynamic content,code resuability , seperate from html.
+
+1.npm install ejs.
+2.index.js  
+
+Activities:
+1.Template Engine EJS - EJS (Embedded JavaScript) is a template engine used in Node.js to generate dynamic HTML pages by embedding JavaScript code inside HTML. 
+It allows developers to display data and apply logic like loops and conditions directly in the frontend.
+
+2.Static files - Static files are files like HTML, CSS, JavaScript, images, and videos that are sent to the browser exactly as they are, without any server-side processing. 
+They are used to design and display the frontend of a website.
+
+3.Express router - Express Router is a feature in Express.js that allows you to create modular and organized route handlers in separate files. 
+It helps manage large applications by grouping related routes together and keeping the code clean.
+
+4.complete flow of express. -
+ 1.Client sends request (from browser)
+ 2.Express server receives request (app.listen())
+ 3.Routing checks URL (app.get(), app.post())
+ 4.Route handler runs (your function executes)
+ 5.Response is sent (res.send() / res.json())
+*/
