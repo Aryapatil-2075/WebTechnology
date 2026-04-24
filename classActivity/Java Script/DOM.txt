@@ -1,0 +1,18 @@
+/*
+DOM : stands for document object model.
+it is the bridge between js and html.
+it is programming interface of html web browser load and html page it converts html into an objects 
+that object structure is called DOM.
+JS uses DOM to read change add delete html elemements.
+it is a tree like structure which represents html web pages in object.
+with the help of dom we can manipulate web pages.
+
+create any simple project using js ,dom and html css
+querySelector and querySelectorAll
+getElementById methods 
+document.getElementById("title").id;
+document.getElementById("title").class;
+document.getElementById("title").className;
+document.getElementById("title").setAttributes;
+document.getElementById("title").getAttributes;
+*/

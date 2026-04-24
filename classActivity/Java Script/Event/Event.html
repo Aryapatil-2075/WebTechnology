@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Events Demo</title>
+
+    <style>
+        body {
+            background-color: #414141;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        } 
+
+        li {
+            margin: 15px;
+        }
+
+        img {
+            width: 200px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        a {
+            color: lightblue;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Amazing Images (Click to Remove)</h2>
+
+    <ul id="images">
+        <li>
+            <img id="photoshop"
+                src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
+                alt="Photoshop Logo">
+        </li>
+
+        <li>
+            <img id="japan"
+                src="https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+                alt="Mount Fuji">
+        </li>
+
+        <li>
+            <img id="Nature"
+                src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b"
+                alt="Nature Image">
+        </li>
+
+        <li>
+            <img id="photoman"
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+                alt="Photographer">
+        </li>
+
+        <li>
+            <img id="tiger"
+                src="https://images.unsplash.com/photo-1546182990-dffeafbe841d"
+                alt="Tiger" 
+                onclick="alert('You clicked Photoshop Image!')">
+     <!-- html should contain structure and js is logic so mixing both is bad practice hard to maintain in weak projects -->
+
+        </li>
+
+        <li>
+            <a href="https://google.com" id="google">Visit Google</a>
+        </li>
+    </ul>
+  </body>
+  <script>
+    document.getElementById('Nature').onclick=function(){
+        alert('Nature clicked')
+    }
+
+    document.getElementById('photoman').addEventListener('click', function(e){
+    console.log(e);
+}, false)
+
+    //event propagation
+      document.getElementById('images').addEventListener('click', function(){
+    console.log('clicking inside ul');
+}, true)
+
+  document.getElementById('photoshop').addEventListener('click', function(){
+    console.log('clicking on photoshop');
+}, false)
+
+ document.getElementById('google').addEventListener('click', function(e){
+    console.log("google clicked");
+    e.preventDefault()
+}, false)
+
+  </script>
+  </html>
+
+  <!-- //event is action that happens in browser 
+  //eg clicking a button ,moving mouse ,pressing keys and submitting form ,loading pages  
+  javacript can detect these events and respond to them
+  
+  Types pf Event
+  1)mouse event
+     -click 
+     -dbclick 
+     -mouseover 
+     -mouseout 
+  2)keyboard event
+     -keydown 
+     -keyup
+  3)brower event
+     -load 
+     -resize 
+     -scroll
+  
+select element assign func to click event when clicked runs
+only one event can be assign cannot handle multiple listeners properly
+
+jquery type timestamp default prevented target source ele current target client x,client y, screenx ,screeny
+alt key
+
+addEventListener is js method used to attach an event handler to an html element so that specific function runs 
+when a particular event is occured
+
+event goes inner element to parent and parent to document
+document
+  -->

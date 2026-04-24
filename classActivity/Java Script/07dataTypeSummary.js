@@ -55,7 +55,7 @@ function add(a, b) {
 const variable_name = function function_name() {
   console.log("arya");
 };
-//Array function :
+//Arrow function :
 const name = () => console.log("arya");
 const adds = (a, b) => a + b; // Arrow Function Definition
 
