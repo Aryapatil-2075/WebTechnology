@@ -1,0 +1,13 @@
+<div class="p-4" style="max-width: 400px; margin: 50px auto;">
+    <h3>Register</h3>
+    <input class="form-control mb-2" [(ngModel)]="email" placeholder="Email">
+    <input class="form-control mb-2" type="password" [(ngModel)]="password" placeholder="Password">
+
+    <select class="form-control mb-2" [(ngModel)]="role">
+        <option value="employee">Employee</option>
+        <option value="admin">Admin</option>
+    </select>
+
+    <button class="btn btn-success w-100" (click)="register()">Register</button>
+    <p class="text-center mt-2"><a href="/login">Already have account? Login</a></p>
+</div>

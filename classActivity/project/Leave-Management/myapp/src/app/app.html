@@ -1,0 +1,22 @@
+<div class="container mt-3">
+  <nav class="navbar navbar-expand navbar-light bg-light mb-3">
+    <div class="container-fluid">
+      <span class="navbar-brand"><strong>Leave Manager</strong></span>
+      <div class="navbar-nav ms-auto">
+        <div *ngIf="!getUser()">
+          <a routerLink="/login" class="nav-link">Login</a>
+          <a routerLink="/register" class="nav-link">Register</a>
+        </div>
+        <div *ngIf="getUser()">
+          <a routerLink="/" class="nav-link">Home</a>
+          <a *ngIf="isEmployee()" routerLink="/apply" class="nav-link">Apply</a>
+          <a *ngIf="isEmployee()" routerLink="/my" class="nav-link">My Leaves</a>
+          <a *ngIf="isAdmin()" routerLink="/manage" class="nav-link">Manage</a>
+          <span class="nav-link">{{ getUser()?.email }}</span>
+          <button class="btn btn-sm btn-danger" (click)="logout()">Logout</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <router-outlet></router-outlet>
+</div>

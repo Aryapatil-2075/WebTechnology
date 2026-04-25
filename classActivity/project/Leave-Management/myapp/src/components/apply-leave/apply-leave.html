@@ -1,0 +1,7 @@
+<div class="p-4" style="max-width: 500px; margin: 20px auto;">
+    <h3>Apply Leave</h3>
+    <textarea class="form-control mb-2" [(ngModel)]="reason" placeholder="Reason" rows="3"></textarea>
+    <input class="form-control mb-2" type="date" [(ngModel)]="fromDate">
+    <input class="form-control mb-2" type="date" [(ngModel)]="toDate">
+    <button class="btn btn-success w-100" (click)="apply()">Submit</button>
+</div>

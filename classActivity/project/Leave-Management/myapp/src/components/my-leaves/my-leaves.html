@@ -1,0 +1,22 @@
+<div class="p-4">
+    <h3>My Leaves</h3>
+    <table class="table table-striped" *ngIf="leaves.length > 0; else empty">
+        <tr>
+            <th>Reason</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Status</th>
+        </tr>
+        <tr *ngFor="let l of leaves">
+            <td>{{ l.reason }}</td>
+            <td>{{ l.fromDate }}</td>
+            <td>{{ l.toDate }}</td>
+            <td><strong
+                    [style.color]="l.status === 'Approved' ? 'green' : l.status === 'Rejected' ? 'red' : 'orange'">{{
+                    l.status }}</strong></td>
+        </tr>
+    </table>
+    <ng-template #empty>
+        <p class="text-center">No leaves applied yet</p>
+    </ng-template>
+</div>

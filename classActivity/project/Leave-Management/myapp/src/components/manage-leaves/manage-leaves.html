@@ -1,0 +1,29 @@
+<div class="p-4">
+  <h3>Manage Leaves</h3>
+  <table class="table table-striped" *ngIf="leaves.length > 0; else empty">
+    <tr>
+      <th>Reason</th>
+      <th>From</th>
+      <th>To</th>
+      <th>Status</th>
+      <th>Action</th>
+    </tr>
+    <tr *ngFor="let leave of leaves">
+      <td>{{ leave.reason }}</td>
+      <td>{{ leave.fromDate }}</td>
+      <td>{{ leave.toDate }}</td>
+      <td><strong
+          [style.color]="leave.status === 'Approved' ? 'green' : leave.status === 'Rejected' ? 'red' : 'orange'">{{
+          leave.status }}</strong></td>
+      <td>
+        <button class="btn btn-sm btn-success me-2" (click)="approve(leave.id)"
+          [disabled]="leave.status !== 'Pending'">Approve</button>
+        <button class="btn btn-sm btn-danger" (click)="reject(leave.id)"
+          [disabled]="leave.status !== 'Pending'">Reject</button>
+      </td>
+    </tr>
+  </table>
+  <ng-template #empty>
+    <p class="text-center">No pending leaves</p>
+  </ng-template>
+</div>

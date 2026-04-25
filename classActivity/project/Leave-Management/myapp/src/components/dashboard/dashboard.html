@@ -1,0 +1,30 @@
+<div class="p-4">
+    <h3>Dashboard</h3>
+    <p *ngIf="!user">Please login</p>
+    <div *ngIf="user" class="row">
+        <div class="col-md-3">
+            <div class="card bg-primary text-white p-3 text-center">
+                <h5>Total</h5>
+                <h2>{{ stats.total }}</h2>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-warning text-white p-3 text-center">
+                <h5>Pending</h5>
+                <h2>{{ stats.pending }}</h2>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-success text-white p-3 text-center">
+                <h5>Approved</h5>
+                <h2>{{ stats.approved }}</h2>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-danger text-white p-3 text-center">
+                <h5>Rejected</h5>
+                <h2>{{ stats.rejected }}</h2>
+            </div>
+        </div>
+    </div>
+</div>
