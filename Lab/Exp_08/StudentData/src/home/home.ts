@@ -1,4 +1,4 @@
-+import { Component } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ListData } from '../Service/list-data';
 @Component({
@@ -11,7 +11,7 @@ export class Home {
   //One way Binding
   name:String = "Arya Patil"
   age:Number=21
-  course:String="CSE"
+  course:String="CSE(AIML)"
 
 
 

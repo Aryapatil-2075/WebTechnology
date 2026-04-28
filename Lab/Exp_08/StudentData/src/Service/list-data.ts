@@ -5,7 +5,13 @@ import { Injectable } from '@angular/core';
 })
 export class ListData {
 
-  heros:any[]=["A","B","C","D"]
+  heros:any[]=["Iron Man",
+  "Captain America",
+  "Thor",
+  "Hulk",
+  "Black Widow",
+  "Hawkeye",
+  "Spider-Man"]
 
   getData()
   {

@@ -1,0 +1,46 @@
+.page-card {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.navbar {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.navbar a {
+  margin: 0 8px;
+  color: #1f4fa3;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.student-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.student-list {
+  padding: 0;
+  margin: 0;
+}
+
+.student-item {
+  list-style: none;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  background-color: #f8f8f8;
+  line-height: 1.6;
+}
+
+.empty-text {
+  text-align: center;
+}
