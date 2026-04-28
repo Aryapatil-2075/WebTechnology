@@ -1,0 +1,32 @@
+Sql = Structural query language is used to communication between real time database.
+Mysql,Postgre,Oracle,SQL Server.
+
+Real time example:
+Company usee
+ecommerce website
+Banking
+
+Activity:
+Insert data,create,select, update and  delete
+
+Create : Create table table_name(datatypes Keys );
+Insert : Insert into table_name (Column_name) Values(values_of_table);
+Select : Select * from table_name;/ select column from table_name; / with where 
+Update : Update table_name set Column_name=value;
+delete : Delete from table_name;
+
+ORM:object relational Mapping
+Instead of writing sql query we use javascript object
+student.findAll{}
+
+Web_Socket :
+WebSocket allows us real time communication HTTP->Request or Response
+WebSocket continues connection
+
+chatApps like Whatapps,Live stock Price Update, Online Gaming, Notification 
+
+npm install ws -> to install WebSocket
+
+Activity :
+1. Deep study Websocket 
+Understand webSocket examples
